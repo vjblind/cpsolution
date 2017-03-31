@@ -33,7 +33,7 @@
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   position: absolute;
 }
- 
+
 .overlay{
 
   background-color: #0d1721;
@@ -52,7 +52,32 @@ padding-bottom: 10%;
 /*
  * Base structure
  */
+ .blink_text {
 
+     animation:1s blinker linear infinite;
+     -webkit-animation:1s blinker linear infinite;
+     -moz-animation:1s blinker linear infinite;
+
+      color: red;
+     }
+
+     @-moz-keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+      }
+
+     @-webkit-keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+      }
+
+     @keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+      }
 html,
 body {
   height: 100%;
