@@ -4,17 +4,51 @@
 
 /* Links */
 .container{
-    display:  flex;  width: 100%;
+
 }
 .jumbos {
-    background-color: #414141; /* Orange */
-    color: #ffffff;
+
 }
 .container-fluid {
-    padding: 60px 50px;
-}
-</style>
 
+}
+
+.title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 48px;
+  /*text-shadow: 4px 4px 4px #aaa;*/
+}
+
+.console{
+  background-color: #0d1721;
+  background-image:
+  url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.titxle{
+
+  background-color: #0d1721;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  position: absolute;
+}
+ 
+.overlay{
+
+  background-color: #0d1721;
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+pointer-events: none;
+opacity: 0.5;
+background-repeat: repeat;
+padding-bottom: 10%;
+}
 /*
  * Base structure
  */
@@ -24,5 +58,5 @@ body {
   height: 100%;
 
      font-size: 12px;
-  background-color:   grey !important;
+  /*background-color:   grey !important;*/
 }
